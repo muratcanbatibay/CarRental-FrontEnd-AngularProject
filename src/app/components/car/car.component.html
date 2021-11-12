@@ -1,15 +1,21 @@
-<table class="table">
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-
-
-
-
-
+<div *ngIf="dataLoaded==false" class="spinner-grow" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<table *ngIf="dataLoaded==true" class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Araç Adı</th>
+            <th>Model Yılı</th>
+            <th>Günlük Ücret</th>
+            <th>Açıklama</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let car of car">
+        <td>{{car.carId}}</td>
+        <td>{{car.carName}}</td>
+        <td>{{car.modelYear}}</td>
+        <td>{{car.dailyPrice}}</td>
+        <td>{{car.description}}</td>
+    </tr>
 </table>
