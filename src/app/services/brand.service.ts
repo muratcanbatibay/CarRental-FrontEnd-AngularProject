@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class BrandService {
 
-    apiUrl="https://localhost:44305/api/cars/getall"
+    apiUrl="https://localhost:44305/api/brands/getall"
     constructor(private HttpClient:HttpClient) { }
     
     getBrands():Observable <ListResponseModel<Brand>> { 
