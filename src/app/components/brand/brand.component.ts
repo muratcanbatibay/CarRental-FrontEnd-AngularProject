@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Brand } from 'src/app/models/brand';
 
 @Component({
-  selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
+  selector: 'app-brand',
+  templateUrl: './brand.component.html',
+  styleUrls: ['./brand.component.css']
 })
-export class BrandComponent implements OnInit {
+ export class BrandComponent implements OnInit {
  brands:Brand[]=[];
   constructor(private brandService:BrandService ) { }
 

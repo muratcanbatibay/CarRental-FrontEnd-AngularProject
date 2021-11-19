@@ -10,6 +10,7 @@ import { NaviComponent } from './components/navi/navi.component';
 import { BrandComponent } from './components/brand/brand.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
