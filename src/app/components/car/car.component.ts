@@ -8,7 +8,7 @@ import { Car } from 'src/app/models/car';
   styleUrls: ['./car.component.css']
 })
 export class CarComponent implements OnInit {
-car:Car[] = []
+cars:Car[] = []
 dataLoaded=false;
 
   constructor(private carService:CarService) { }
@@ -18,7 +18,7 @@ dataLoaded=false;
 
   }
   getCars(){
-       this.carService.getCars().subscribe(response=>{this.car=response.data})
+       this.carService.getCars().subscribe(response=>{this.cars=response.data})
        this.dataLoaded=true;
   }
 
