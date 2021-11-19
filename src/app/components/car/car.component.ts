@@ -1,7 +1,5 @@
 import { CarService } from './../../services/car.service';
-import { carResponseModel } from './../../models/carResponseModel';
 import { Component, OnInit } from '@angular/core';
-
 import { Car } from 'src/app/models/car';
 
 @Component({
