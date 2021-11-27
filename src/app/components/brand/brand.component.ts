@@ -32,7 +32,5 @@ getCurrentBrandClass(brand:Brand){
   else{
     return "list-group-item"
   }
-
-
 }
 }
