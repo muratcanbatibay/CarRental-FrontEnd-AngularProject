@@ -25,4 +25,12 @@ getCarsByBrand(brandId:number):Observable <ListResponseModel<Car>> {
   
 
 }
+
+getCarsByColor(colorId:number):Observable <ListResponseModel<Car>> { 
+  let newPath= this.apiUrl+ "cars/getallbycolorid?colorId="+colorId
+  return this.HttpClient
+  .get<ListResponseModel<Car>>(newPath)
+  
+
+}
 }
