@@ -20,6 +20,7 @@ import { ColorComponent } from './components/color/color.component';
     NaviComponent,
     ColorComponent,
     
+    
   ],
   imports: [
     BrowserModule,

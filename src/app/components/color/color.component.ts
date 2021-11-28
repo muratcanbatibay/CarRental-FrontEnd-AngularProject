@@ -20,7 +20,7 @@ export class ColorComponent implements OnInit {
 
   getColors() {
 
-    this.colorService.getBrands().subscribe(response => { this.colors = response.data })
+    this.colorService.getColors().subscribe(response => { this.colors = response.data })
   }
   setCurrentColor(color: Color) {
     this.currentColor = color

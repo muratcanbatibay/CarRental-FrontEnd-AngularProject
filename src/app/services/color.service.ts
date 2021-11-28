@@ -12,10 +12,10 @@ export class ColorService {
   apiUrl="https://localhost:44305/api/color/getall"
   constructor(private HttpClient:HttpClient) { }
   
-  getBrands():Observable <ListResponseModel<Color>> { 
+  getColors():Observable <ListResponseModel<Color>> { 
     return this.HttpClient
     .get<ListResponseModel<Color>>(this.apiUrl)
-    
-
+   
 }
+
 }
