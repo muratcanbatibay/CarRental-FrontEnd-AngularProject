@@ -1,0 +1,12 @@
+<div *ngFor="let car of cars" >
+
+<div class="card" style="width: 37rem;">
+    <img src="https://www.webtekno.com/images/editor/default/0001/32/b5cd22a9193bdb275c921f7a65f3519a4351d0ac.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{car.carName}} {{car.dailyPrice | currency}}</h5>
+      <p class="card-text">{{car.description}}</p>
+      <a class="btn btn-dark">Hemen Kirala</a>
+    </div>
+  </div>
+
+</div>
