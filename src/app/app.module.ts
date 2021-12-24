@@ -13,8 +13,9 @@ import { NaviComponent } from './components/navi/navi.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { ColorComponent } from './components/color/color.component';
 import { CarDetailComponent } from './components/car-detail/car-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './pipe/filter.pipe';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -28,6 +29,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     ColorComponent,
     CarDetailComponent,
     FilterPipe,
+  
+    CardComponent,
     
    
     
@@ -40,9 +43,12 @@ import { FilterPipe } from './pipe/filter.pipe';
     HttpClientModule,
     FormsModule,
     ToastrModule.forRoot({
+      
       positionClass:"toast-bottom-right"
     }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

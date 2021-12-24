@@ -1,7 +1,15 @@
-<div class="list-group" style="margin-top: 1rem">
-    <li
-     (click)="setCurrentColor(color)" routerLink="cars/color/{{color.colorId}}" *ngFor="let color of colors"
-     [class]="getCurrentColorClass(color)" >{{color.colorName}}
-    </li>
-   
+
+<div class="accordion open" id="accordionExample">
+  
+  <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      Renkler
+    </button>
+  </h2>
+  <div *ngFor="let color of colors" id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div (click)="setCurrentColor(color)" routerLink="/cars/color/{{color.colorId}}" [class]="getCurrentColorClass(color)">
+      <strong>{{color.colorName}}</strong>
+    </div>
   </div>
+  
+</div>

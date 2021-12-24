@@ -7,7 +7,7 @@
 
   </div>
 </div>
-<table class="table table-dark" >
+<table class="table table-dark">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -21,12 +21,12 @@
   <tbody>
     <tr *ngFor="let car of cars | filterPipe:filterText">
       <td>{{car.carId }}</td>
-      <td>{{car.carName}}</td> 
+      <td>{{car.carName}}</td>
       <td>{{car.description}}</td>
       <td>{{car.dailyPrice | currency}}</td>
       <td><button type="button" routerLink="/cars/getcardetails" class="btn btn-dark btn-sm">Tüm Detaya Git</button></td>
-      <td><button type="button" (click)="addToCart(car)" routerLink="" class="btn btn-dark btn-sm">Kirala</button></td>
+      <td></td>
     </tr>
 
-  </tbody> 
+  </tbody>
 </table>

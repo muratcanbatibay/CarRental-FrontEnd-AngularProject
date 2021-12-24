@@ -50,9 +50,7 @@ export class CarComponent implements OnInit {
     this.carService.getCarsByColor(colorId).subscribe(response => { this.cars = response.data })
     this.dataLoaded = true;
   }
-  addToCart(car:Car){
-    this.toastrService.success(car.carName+" " +"kiralanmak üzere sepete eklendi")
-  }
+  
   
   
 }

@@ -1,0 +1,48 @@
+<div class="content">
+  <div class="col md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Kredi/Banka Kartı Ekle</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="cardAddForm">
+          <div class="mb-3">
+            <label for="cardNumber">Kart Numarası</label>
+            <div class="form-group">
+              <input type="number" id="cardNumber" formControlName="cardNumber" class="form-control"
+                placeholder="Kart Numaranızı Girin">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="firstName">Ad</label>
+            <div class="form-group">
+              <input type="text" id="firstName" formControlName="firstName" class="form-control">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="lastName">Soyad</label>
+            <div class="form-group">
+              <input type="text" id="lastName" formControlName="lastName" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="ccv">CCV</label>
+            <div class="form-group">
+              <input type="number" id="ccv" formControlName="ccv" class="form-control"
+                placeholder="3 Haneli CCV Numaranızı Girin">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="d-grid gap-2">
+          <button class="btn btn-fill btn-primary" (click)="addCard()">Kart Ekle</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

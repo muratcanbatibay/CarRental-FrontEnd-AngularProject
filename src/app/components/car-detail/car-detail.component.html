@@ -5,8 +5,10 @@
     <div class="card-body">
       <h5 class="card-title">{{car.carName}} {{car.dailyPrice | currency}}</h5>
       <p class="card-text">{{car.description}}</p>
-      <a class="btn btn-dark">Hemen Kirala</a>
-    </div>
+      <div class="d-grid gap-2">
+        <button  type="button" routerLink="/cards/mycard" class="btn btn-dark btn-lg">Kirala</button>   
+      </div>
+       </div>
   </div>
 
 </div>
