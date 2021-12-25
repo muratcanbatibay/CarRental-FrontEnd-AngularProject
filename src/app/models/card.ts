@@ -1,5 +1,5 @@
 export interface Card{
-   id:string,
+   id:number,
    cardNumber:string,
    firstName:string,
    lastName:string,
